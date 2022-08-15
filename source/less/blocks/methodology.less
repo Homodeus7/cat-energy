@@ -1,0 +1,76 @@
+.methodology {
+    background-color: @white;
+}
+.methodology__wrapper {
+}
+.methodology__title {
+    font-size: 36px;
+}
+.methodology__list {
+    list-style: none;
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 20px;
+}
+.methodology__item p {
+    margin: 0;
+}
+
+.methodology__description {
+    padding: 0 37px 26px 100px;
+
+}
+
+.methodology__item--good,
+.methodology__item--practic,
+.methodology__item--use,
+.methodology__item--time {
+    position: relative;
+}
+
+
+.methodology__item--good::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("/source/img/good.png");
+    top: -4px;
+    left: 20px;
+}
+
+.methodology__item--practic:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("/source/img/practic.png");
+    top: -4px;
+    left: 20px;
+}
+
+.methodology__item--use:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("/source/img/use.png");
+    top: -4px;
+    left: 20px;
+}
+
+.methodology__item--time:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("/source/img/time.png");
+    top: -4px;
+    left: 20px;
+}
