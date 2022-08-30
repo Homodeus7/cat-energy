@@ -1,11 +1,43 @@
 .button {
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 18px;
-    color: @white;
-    background-color: @basic-green;
-    padding: 14px 26px 14px 26px;
-    border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white;
+  background-color: @basic-green;
+  padding: 14px 26px 14px 26px;
+  border: none;
+}
+
+.main-banner__button {
+  width: 280px;
+  height: 40px;
+}
+
+
+.main-banner__button--top {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
+}
+
+.main-banner__button--bottom {
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+}
+
+.catalog-card__button {
+  height: 40px;
+  width: 280px;
+}
+
+.catalog-card__button-ufolding {
+  background-color: @basic-grey;
+  color: @special-dark-grey;
+}

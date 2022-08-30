@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="/source/css/style.css">
 </head>
+
 <body class="page__body">
     <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-        </a>
+        <div class="page-header__wrapper">
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи">
+            </a>
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-image" src="img/logo-mobile-2.svg" width="101" height="18"
+                    alt="Кэт энерджи">
+            </a>
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </div>
         <nav class="main-nav">
             <div class="main-nav__wrapper">
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden">Открыть меню</span>
-                  </button>
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a href="index.html">Главная</a>
@@ -46,62 +54,73 @@
                         <label class="field__label" for="cat-weight">вес (кг):<sup>*</sup></label>
                         <input class="field__input" id="cat-weight" type="text" name="weight" placeholder="7">
                     </div>
-                      <div class="cat-info-form__field">
+                    <div class="cat-info-form__field">
                         <label class="field__label" for="cat-age">Возраст (лет):</label>
                         <input class="field__input" id="cat-age" type="text" name="age" placeholder="7">
-                   </div>
+                    </div>
                 </fieldset>
                 <fieldset class="form-choose-programs__item form-group intention-form">
                     <ul class="intention-form__list radio">
-                      <li class="radio__item">
-                            <input class="visually-hidden choose-programs__input radio__input radio__input--current" type="radio" checked name="intention" value="weight-loss" id="choose-weight-loss">
+                        <li class="radio__item">
+                            <input class="visually-hidden choose-programs__input radio__input radio__input--current"
+                                type="radio" checked name="intention" value="weight-loss" id="choose-weight-loss">
                             <label class="field__label" for="choose-weight-loss">похудение</label>
-                      </li>
-                      <li class="radio__item">
-                          <input class="visually-hidden choose-programs__input radio__input" type="radio" name="intention" value="mass-set" id="choose-mass-set">
-                          <label class="field__label" for="choose-mass-set">набор массы</label>
-                      </li>
-                      <li class="radio__item">
-                         <input class="visually-hidden choose-programs__input radio__input" type="radio" name="intention" value="indefinite" id="choose-indefinite">
-                         <label class="field__label" for="choose-indefinite">не знаю (нужен ваш совет)</label>
-                      </li>
+                        </li>
+                        <li class="radio__item">
+                            <input class="visually-hidden choose-programs__input radio__input" type="radio"
+                                name="intention" value="mass-set" id="choose-mass-set">
+                            <label class="field__label" for="choose-mass-set">набор массы</label>
+                        </li>
+                        <li class="radio__item">
+                            <input class="visually-hidden choose-programs__input radio__input" type="radio"
+                                name="intention" value="indefinite" id="choose-indefinite">
+                            <label class="field__label" for="choose-indefinite">не знаю (нужен ваш совет)</label>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset class="form-choose-programs__item form-group contact-form">
                     <h3 class="form-choose-programs__title">Контактные данные (владельца кота)</h3>
                     <div class="contact-form__field field ">
                         <label class="field__label" for="contact-email">Электронная почта<sup>*</sup>:</label>
-                        <input class="field__input field__input--email" id="contact-email" type="email" name="email" placeholder="кuklachev@gmail.com">
+                        <input class="field__input field__input--email" id="contact-email" type="email" name="email"
+                            placeholder="кuklachev@gmail.com">
                     </div>
                     <div class="contact-form__field field ">
                         <label class="field__label" for="contact-telephone">Контактный телефон<sup>*</sup>:</label>
-                        <input class="field__input field__labelfield__input--telephone" id="contact-telephone" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+                        <input class="field__input field__labelfield__input--telephone" id="contact-telephone"
+                            type="tel" name="telephone" placeholder="8 (960) 900-60-90">
                     </div>
                 </fieldset>
                 <fieldset class="form-choose-programs__item form-group comment-form">
                     <h3 class="form-choose-programs__title">Комментарий</h3>
                     <label class="form-choose-programs__label visually-hidden" for="comment-desc">Комментарий</label>
-                    <textarea class="form-choose-programs__input field__input" name="text" id="comment-desc" cols="30" rows="5" placeholder="расскажите обо всех повадках кота"></textarea>
+                    <textarea class="form-choose-programs__input field__input" name="text" id="comment-desc" cols="30"
+                        rows="5" placeholder="расскажите обо всех повадках кота"></textarea>
                 </fieldset>
                 <fieldset class="form-choose-programs__item form-group additive-form">
                     <h3 class="form-choose-programs__title">Дополнительно</h3>
                     <ul class="intention-form__list checkbox">
-                      <li class="checkbox__item">
-                            <input class="visually-hidden choose-programs__input checkbox__input checkbox__input--current" type="checkbox" checked name="additive" value="sweetener" id="sweetener">
+                        <li class="checkbox__item">
+                            <input
+                                class="visually-hidden choose-programs__input checkbox__input checkbox__input--current"
+                                type="checkbox" checked name="additive" value="sweetener" id="sweetener">
                             <label class="field__label" for="sweetener">сахарозаменитель</label>
-                      </li>
-                      <li class="checkbox__item">
-                          <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox" name="additive" value="water" id="water">
-                          <label class="field__label" for="water">питьевая вода</label>
-                      </li>
-                      <li class="checkbox__item">
-                        <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox" name="additive" value="milk" id="milk">
-                        <label class="field__label" for="milk">молоко</label>
-                     </li>
-                     <li class="checkbox__item">
-                        <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox" name="additive" value="vitamins" id="vitamins">
-                        <label class="field__label" for="vitamins">витамины</label>
-                     </li>
+                        </li>
+                        <li class="checkbox__item">
+                            <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox"
+                                name="additive" value="water" id="water">
+                            <label class="field__label" for="water">питьевая вода</label>
+                        </li>
+                        <li class="checkbox__item">
+                            <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox"
+                                name="additive" value="milk" id="milk">
+                            <label class="field__label" for="milk">молоко</label>
+                        </li>
+                        <li class="checkbox__item">
+                            <input class="visually-hidden choose-programs__input checkbox__input" type="checkbox"
+                                name="additive" value="vitamins" id="vitamins">
+                            <label class="field__label" for="vitamins">витамины</label>
+                        </li>
                     </ul>
                 </fieldset>
                 <button class="form-choose-programs__button button" type="submit">Отправить заявку</button>
@@ -128,24 +147,29 @@
             </div>
             <div class="page-footer__social social">
                 <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
-                  </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
+                                class="visually-hidden">Мы в Вконтакте</span></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span
+                                class="visually-hidden">Мы в Фейсбуке</span></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram"
+                            href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в
+                                Инстаграме</span></a>
+                    </li>
                 </ul>
-              </div>
-              <div class="page-footer__item copyright">
+            </div>
+            <div class="page-footer__item copyright">
                 <p class="copyright__item">HTML Academy</p>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+                    <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
                 </a>
-              </div>
+            </div>
         </div>
     </footer>
 </body>
-</html>   
+
+</html>
