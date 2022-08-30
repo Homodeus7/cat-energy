@@ -3,7 +3,6 @@
 }
 
 .main-banner__intro {
-    height: 302px;
     color: @white;
 
     @media (min-width: @tablet-width) {
@@ -17,11 +16,27 @@
     line-height: 36px;
     margin: 0;
     padding: 27px 0 25px 20px; //top-right-bottom-left
+
+    @media (min-width: @tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+        padding: 74px 237px 41px 117px; //top-right-bottom-left
+    }
+
+    @media (min-width: @desktop-width) {
+        font-size: 60px;
+        line-height: 60px;
+        padding-left: 190px;
+    }
 }
 
 .main-banner__slogan {
     text-transform: uppercase;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+    }
 }
 
 
@@ -29,6 +44,15 @@
     position: relative;
     height: 302px;
     background-color: @basic-green-transparent;
+    top: -1px;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+        display: block;
+    }
 }
 
 .main-banner__pic::after {
@@ -37,21 +61,35 @@
     content: "";
     width: 320px;
     height: 302px;
+    background-size: 320px 302px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-image: url("../img/index-background-desktop.jpg");
-    top: -110px;
+    background-image: url("/source/img/index-background-mobile.jpg");
+    top: -150px;
     z-index: -1;
 
     @media (min-width: @tablet-width) {
         display: none;
     }
+
+    @media (min-width: @desktop-width) {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 720px;
+        height: 694px;
+        background-size: 720px 694px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: url("/source/img/index-background-desktop.png");
+        z-index: -1;
+    }
 }
 
 .main-banner__pic-2 {
     position: relative;
-    background-color: @white;
-    height: 160px;
+    width: 280px;
+    height: 270px;
 }
 
 .main-banner__pic-2::after {
@@ -60,9 +98,24 @@
     content: "";
     width: 280px;
     height: 270px;
+    background-size: 280px 270px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-image: url("/source/img/index-can-mobile.png");
+    background-image: url("/source/img/index-can.png");
     top: -112px;
     left: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 709px;
+        height: 609px;
+
+        background-size: 709px 609px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 552px;
+        height: 499px;
+        background-size: 552px 499px;
+
+    }
 }
