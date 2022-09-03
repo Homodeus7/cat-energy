@@ -1,13 +1,23 @@
 .product-line {
     background-color: @white;
 }
+
 .product-line__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+    }
 }
 
 .product-line__item {
     background-color: @basic-grey;
+    margin: 10px 20px 10px 20px;
     padding: 20px;
 }
+
 .product-line__title {
     text-transform: uppercase;
     font-size: 24px;
@@ -16,6 +26,7 @@
     padding-left: 91px;
     padding-top: 30px;
 }
+
 .product-line__description {
     font-family: Arial;
     font-size: 14px;
@@ -24,10 +35,12 @@
     padding-left: 20px;
     padding-top: 22px;
 }
+
 .product-line__link {
     text-transform: uppercase;
     font-size: 16px;
 }
+
 .product-line__title--puma,
 .product-line__title--tiger {
     position: relative;
@@ -40,8 +53,8 @@
     width: 50px;
     height: 53px;
     background-image: url("/source/img/puma.svg");
-    top: -24px;
-    left: -12px;
+    top: 15px;
+    left: 10px;
 }
 
 .product-line__title--tiger::before {
@@ -51,8 +64,8 @@
     width: 67px;
     height: 50px;
     background-image: url("/source/img/tiger.svg");
-    top: -24px;
-    left: -13px;
+    top: 15px;
+    left: 5px;
 }
 
 .product-line__link--arrow {

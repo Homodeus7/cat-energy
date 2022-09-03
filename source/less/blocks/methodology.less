@@ -1,26 +1,44 @@
 .methodology {
     background-color: @white;
 }
-.methodology__wrapper {
-}
+
+.methodology__wrapper {}
+
 .methodology__title {
     font-size: 36px;
 }
+
 .methodology__list {
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    text-align: left;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 }
+
+
+.methodology__item {
+    margin: 13px 0 13px 100px;
+
+
+    @media (min-width: @tablet-width) {
+        height: 280px;
+        width: 250px;
+        margin: 35px 0 35px 30px;
+
+    }
+
+}
+
 .methodology__item p {
     margin: 0;
-}
-
-.methodology__description {
-    padding: 0 37px 26px 100px;
-
 }
 
 .methodology__item--good,
@@ -37,9 +55,18 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/good.png");
+    background-size: 60px 60px;
+    background-image: url("/source/img/good.svg");
     top: -4px;
-    left: 20px;
+    left: -80px;
+
+    @media (min-width: @tablet-width) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        top: 30px;
+        left: 1px;
+    }
 }
 
 .methodology__item--practic:after {
@@ -48,9 +75,18 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/practic.png");
+    background-size: 60px 60px;
+    background-image: url("/source/img/practic.svg");
     top: -4px;
-    left: 20px;
+    left: -80px;
+
+    @media (min-width: @tablet-width) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        top: 30px;
+        left: 1px;
+    }
 }
 
 .methodology__item--use:after {
@@ -59,9 +95,18 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/use.png");
+    background-size: 60px 60px;
+    background-image: url("/source/img/use.svg");
     top: -4px;
-    left: 20px;
+    left: -80px;
+
+    @media (min-width: @tablet-width) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        top: 30px;
+        left: 1px;
+    }
 }
 
 .methodology__item--time:after {
@@ -70,7 +115,46 @@
     content: "";
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/time.png");
+    background-size: 60px 60px;
+    background-image: url("/source/img/time.svg");
     top: -4px;
-    left: 20px;
+    left: -80px;
+
+    @media (min-width: @tablet-width) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        top: 30px;
+        left: 1px;
+    }
+}
+
+.methodology__description {
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    z-index: 1;
+    text-align: left;
+    align-items: center;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 145px;
+        font-size: 16px;
+    }
+}
+
+.methodology__number {
+    position: absolute;
+    display: none;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic-grey;
+    z-index: 0;
+    top: -10px;
+    left: 110px;
+
+    @media (min-width: @tablet-width) {
+        display: block;
+    }
 }
