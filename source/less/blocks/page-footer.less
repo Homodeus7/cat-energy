@@ -1,7 +1,9 @@
 .page-footer {
-    margin-top: 36px;
-    text-align: center;
-    background-color: @basic-grey;
-  }
+  text-align: center;
+  background-color: @basic-grey;
 
-  
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -3,19 +3,38 @@
 }
 
 .location__intro {
-    background-color: @basic-grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0 28px 19px;
+    align-items: center;
+    height: 114px;
+
+    @media (min-width: @tablet-width) {
+        height: 201px;
+        padding: 71px 19px 28px 71px;
+    }
 }
 
 .location__invite {
-    font-size: 20px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 21px;
+        margin-right: 50px;
+    }
 
 }
 
 .location__address {
     font-family: Arial;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     color: @special-dark-grey;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+    }
 }
