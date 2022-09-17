@@ -2,48 +2,73 @@
     text-align: center;
 }
 
+.main-banner__wrapper {
+    @media (min-width: @tablet-width) {
+        min-height: 840px;
+    }
+
+    @media (min-width: @desktop-width) {
+        min-height: 530px;
+    }
+}
+
 .main-banner__intro {
+    position: relative;
     color: @white;
+    z-index: 2;
+    top: 27px;
 
     @media (min-width: @tablet-width) {
         color: @black;
+        text-align: left;
+        padding-left: 117px;
     }
 
+    @media (min-width: @desktop-width) {
+        text-align: left;
+        padding-left: 190px;
+    }
 }
 
 .main-banner__title {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-    padding: 27px 0 25px 20px; //top-right-bottom-left
+    //padding: 27px 0 30px 20px; //top-right-bottom-left
 
     @media (min-width: @tablet-width) {
         font-size: 60px;
         line-height: 60px;
-        padding: 74px 237px 41px 117px; //top-right-bottom-left
+        font-weight: 400;
+        padding: 0 50px 41px 0; //top-right-bottom-left
+        text-align: left;
     }
 
     @media (min-width: @desktop-width) {
         font-size: 60px;
-        line-height: 60px;
-        padding-left: 190px;
+        padding: 0 650px 41px 0; //top-right-bottom-left
     }
 }
 
 .main-banner__slogan {
+    position: relative;
     text-transform: uppercase;
     margin: 0;
+    top: 25px;
 
     @media (min-width: @tablet-width) {
         font-size: 20px;
+        top: 0;
+        text-align: left;
+
+
     }
 }
 
 
-.main-banner__pic {
+.main-banner__background {
     position: relative;
     height: 302px;
-    top: -1px;
 
     @media (min-width: @tablet-width) {
         display: none;
@@ -54,7 +79,26 @@
     }
 }
 
-.main-banner__pic::after {
+.main-banner__background-color {
+    background-color: @basic-green-transparent;
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    top: -98px;
+    z-index: 1;
+
+    @media (min-width: @desktop-width) {
+
+        width: 720px;
+        height: 694px;
+        z-index: 1;
+        top: -450px;
+        left: 721px;
+    }
+
+}
+
+.main-banner__background::after {
     position: absolute;
     display: block;
     content: "";
@@ -64,8 +108,8 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-image: url("/source/img/index-background-mobile.jpg");
-    top: -150px;
-    z-index: -1;
+    top: -98px;
+    z-index: 0;
 
     @media (min-width: @tablet-width) {
         display: none;
@@ -81,19 +125,17 @@
         background-repeat: no-repeat;
         background-position: center bottom;
         background-image: url("/source/img/index-background-desktop.png");
-        z-index: -1;
-        top: -355px;
-        left: 750px;
+        z-index: 0;
+        top: -450px;
+        left: 721px;
     }
 }
 
-.main-banner__pic-2 {
+.main-banner__logo {
     position: relative;
-    width: 280px;
-    height: 270px;
 }
 
-.main-banner__pic-2::after {
+.main-banner__logo::after {
     position: absolute;
     display: block;
     content: "";
@@ -103,12 +145,16 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-image: url("/source/img/index-can.png");
-    top: -112px;
-    left: 20px;
+    top: -235px;
+    left: 5px;
+    z-index: 2;
 
     @media (min-width: @tablet-width) {
         width: 709px;
         height: 609px;
+        top: -55px;
+        left: 60px;
+        z-index: 0;
 
         background-size: 709px 609px;
     }
@@ -117,7 +163,9 @@
         width: 552px;
         height: 499px;
         background-size: 552px 499px;
-        top: -500px;
-        left: 590px;
+        top: -550px;
+        left: 558px;
+        z-index: 2;
+
     }
 }
