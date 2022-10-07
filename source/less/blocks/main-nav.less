@@ -49,6 +49,13 @@
 
 .main-nav__logo--mobile:first-child {
    padding-left: 22px;
+   padding-bottom: 4px;
+}
+
+
+.main-nav__logo--mobile:nth-child(2) {
+   margin-left: 11px;
+   margin-bottom: 5px;
 }
 
 .main-nav__logo--tablet {
@@ -168,8 +175,10 @@
    //display: none;
    //}
 
+   .main-nav__list {}
+
    .main-nav__item a {
-      padding: 22px 21px;
+      padding: 21px 20px;
       border-top: 1px solid @special-grey-4;
    }
 
@@ -210,9 +219,9 @@
    .main-nav--opened .main-nav__toggle::after {
       content: "";
       position: absolute;
-      top: 26px;
+      top: 29px;
       right: 19px;
-      width: 22px;
+      width: 23px;
       height: 2px;
       background-color: @black;
    }
