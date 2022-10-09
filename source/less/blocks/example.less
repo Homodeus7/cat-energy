@@ -10,9 +10,14 @@
 }
 
 .example__wrapper {
+    padding: 0 20px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 30px;
+    }
 
     @media (min-width: @desktop-width) {
-        width: 440px;
+        min-width: 440px;
     }
 }
 
@@ -21,12 +26,12 @@
     font-weight: 400;
     letter-spacing: -1.1px;
     margin: 0;
-    padding: 35px 0 14px 20px; //top-right-bottom-left
+    padding: 35px 0 14px 0; //top-right-bottom-left
 
     @media (min-width: @tablet-width) {
         font-size: 61px;
         letter-spacing: -2.6px;
-        padding: 59px 0 0 30px;
+        padding: 59px 0 0 0;
     }
 }
 
@@ -41,17 +46,23 @@
     @media (min-width: @tablet-width) {
         font-size: 16px;
         line-height: 24px;
-        padding: 80px 30px 25px 30px;
+        padding: 80px 0 55px 0;
+    }
+}
+
+.example__items-wrapper {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 .example__list {
     display: flex;
-    padding: 0 20px;
     justify-content: space-between;
 
     @media (min-width: @tablet-width) {
-        flex-wrap: no-wrap;
+        justify-content: flex-start;
     }
 }
 
@@ -66,6 +77,7 @@
     @media (min-width: @tablet-width) {
         width: 162px;
         height: 72px;
+        margin-right: 40px;
     }
 }
 
@@ -77,11 +89,11 @@
 .example__number {
     font-size: 24px;
     text-align: center;
-    line-height: 30px;
+    line-height: 32px;
 
     @media (min-width: @tablet-width) {
         font-size: 30px;
-        line-height: 37px;
+        line-height: 44px;
     }
 }
 
@@ -91,12 +103,14 @@
     line-height: 12px;
     text-transform: lowercase;
     color: @special-dark-grey;
-    margin: 8px 20px;
+    margin: 10px 20px;
     text-align: center;
     background-color: @basic-grey-2;
 
     @media (min-width: @tablet-width) {
         font-size: 14px;
+        margin: 10px 16px;
+
     }
 }
 
@@ -111,9 +125,11 @@
     text-align: center;
 
     @media (min-width: @tablet-width) {
+        width: 190px;
         font-size: 20px;
-        align-self: center;
-        padding-left: 160px;
+        text-align: right;
+        padding: 0;
+        margin: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -126,23 +142,27 @@
     position: relative;
     padding: 0;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
-
+    padding-top: 80px;
+    padding-left: 50px;
 
 }
 
 .example__before {
     width: 185px;
+
+    @media (min-width: @tablet-width) {
+        width: 400px;
+    }
 }
 
 .example__after {
     position: absolute;
-    width: 155px;
-    left: 167px;
+    width: 340px;
+    left: 410px;
 }
 
 .example__range {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 55px;
 }
