@@ -2,10 +2,21 @@
     background-color: @white;
 }
 
-.methodology__wrapper {}
+//.methodology__wrapper {}
 
 .methodology__title {
     font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    padding-left: 20px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding-left: 110px;
+    }
 }
 
 .methodology__list {
@@ -19,19 +30,30 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-right: 106px;
+    }
+
+
+    @media (min-width: @desktop-width) {
+        margin-left: 80px;
+        margin-right: 38px;
     }
 
 }
 
-
 .methodology__item {
-    margin: 13px 0 13px 100px;
+    margin: 13px 20px 13px 100px;
 
 
     @media (min-width: @tablet-width) {
         height: 280px;
         width: 250px;
-        margin: 35px 0 35px 30px;
+        margin: -5px 0 35px 30px;
+
+    }
+
+    @media (min-width: @desktop-width) {
+        margin: 15px 0 35px 30px;
 
     }
 
@@ -39,7 +61,45 @@
 
 .methodology__item p {
     margin: 0;
+
 }
+
+
+.methodology__description {
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    z-index: 1;
+    text-align: left;
+    align-items: center;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 145px;
+        font-size: 16px;
+    }
+
+
+    @media (min-width: @desktop-width) {
+        line-height: 24px;
+    }
+}
+
+.methodology__number {
+    position: absolute;
+    display: none;
+    font-size: 280px;
+    line-height: 280px;
+    color: @basic-grey;
+    z-index: 0;
+    top: -12px;
+    left: 110px;
+
+    @media (min-width: @tablet-width) {
+        display: block;
+    }
+}
+
 
 .methodology__item--good,
 .methodology__item--practic,
@@ -47,7 +107,6 @@
 .methodology__item--time {
     position: relative;
 }
-
 
 .methodology__item--good::after {
     display: block;
@@ -57,7 +116,7 @@
     height: 60px;
     background-size: 60px 60px;
     background-image: url("/source/img/good.svg");
-    top: -4px;
+    top: -2px;
     left: -80px;
 
     @media (min-width: @tablet-width) {
@@ -77,7 +136,7 @@
     height: 60px;
     background-size: 60px 60px;
     background-image: url("/source/img/practic.svg");
-    top: -4px;
+    top: -2px;
     left: -80px;
 
     @media (min-width: @tablet-width) {
@@ -97,7 +156,7 @@
     height: 60px;
     background-size: 60px 60px;
     background-image: url("/source/img/use.svg");
-    top: -4px;
+    top: -2px;
     left: -80px;
 
     @media (min-width: @tablet-width) {
@@ -117,7 +176,7 @@
     height: 60px;
     background-size: 60px 60px;
     background-image: url("/source/img/time.svg");
-    top: -4px;
+    top: -2px;
     left: -80px;
 
     @media (min-width: @tablet-width) {
@@ -126,35 +185,5 @@
         background-size: 80px 80px;
         top: 30px;
         left: 1px;
-    }
-}
-
-.methodology__description {
-    position: relative;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 24px;
-    z-index: 1;
-    text-align: left;
-    align-items: center;
-
-    @media (min-width: @tablet-width) {
-        padding-top: 145px;
-        font-size: 16px;
-    }
-}
-
-.methodology__number {
-    position: absolute;
-    display: none;
-    font-size: 280px;
-    line-height: 280px;
-    color: @basic-grey;
-    z-index: 0;
-    top: -10px;
-    left: 110px;
-
-    @media (min-width: @tablet-width) {
-        display: block;
     }
 }
