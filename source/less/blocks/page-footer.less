@@ -1,9 +1,27 @@
 .page-footer {
-  text-align: center;
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.page-footer__wrapper {
+  padding: 0 20px;
+}
+
+.page-footer__item:first-child {
+  min-height: 95px;
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @special-grey-5;
+}
+
+.page-footer__item:nth-child(2) {
+  min-height: 63px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid @special-grey-5;
 }
