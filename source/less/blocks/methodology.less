@@ -2,66 +2,74 @@
     background-color: @white;
 }
 
-//.methodology__wrapper {}
+.methodology__wrapper {
+    padding: 0 20px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0 110px;
+    }
+
+}
 
 .methodology__title {
     font-size: 36px;
     font-weight: 400;
     letter-spacing: -1px;
-    padding-left: 20px;
     margin: 0;
+    padding-top: 26px;
+    padding-bottom: 47px;
+
 
     @media (min-width: @tablet-width) {
         font-size: 61px;
         letter-spacing: -2.2px;
-        padding: 31px 0 64px 30px;
+        padding-top: 31px;
+        padding-bottom: 61px;
     }
 
     @media (min-width: @desktop-width) {
-        padding-left: 110px;
+        padding-top: 56px;
+        padding-bottom: 60px;
     }
 }
 
 .methodology__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 32px;
+    padding-bottom: 20px;
+    padding-left: 80px;
 
     @media (min-width: @tablet-width) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-right: 106px;
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 280px 280px;
+        gap: 37px 154px;
         padding-bottom: 0px;
-
+        padding-left: 0px;
     }
-
 
     @media (min-width: @desktop-width) {
-        margin-left: 80px;
-        margin-right: 38px;
-    }
+        grid-template-columns: 230px 230px 230px 230px;
+        grid-template-rows: 280px;
+        gap: 37px 95px;
 
+    }
 }
 
 .methodology__item {
-    margin: 13px 20px 13px 100px;
-
+    padding-bottom: 26px;
 
     @media (min-width: @tablet-width) {
-        height: 280px;
-        width: 250px;
-        margin: -5px 0 40px 30px;
-
+        padding-bottom: 124px;
     }
 
-    @media (min-width: @desktop-width) {
-        margin: 15px 0 35px 30px;
-
-    }
+    @media (min-width: @desktop-width) {}
 
 }
 
@@ -91,10 +99,9 @@
     position: absolute;
     display: none;
     font-size: 280px;
-    line-height: 280px;
     color: @basic-grey;
     z-index: 0;
-    top: -290px;
+    top: -162px;
     left: 110px;
 
     @media (min-width: @tablet-width) {

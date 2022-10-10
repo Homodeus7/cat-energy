@@ -1,11 +1,19 @@
 .example {
     display: flex;
     flex-direction: column;
-    background-color: @basic-grey-2;
+
 
     @media (min-width: @desktop-width) {
         flex-direction: row;
         justify-content: space-around;
+    }
+}
+
+.example__color {
+    background-color: @basic-grey-2;
+
+    @media (min-width: @tablet-width) {
+        background-color: @white;
     }
 }
 
@@ -32,6 +40,7 @@
         font-size: 61px;
         letter-spacing: -2.6px;
         padding: 59px 0 0 0;
+
     }
 }
 
@@ -63,6 +72,7 @@
 
     @media (min-width: @tablet-width) {
         justify-content: flex-start;
+        padding-bottom: 253px;
     }
 }
 
@@ -110,7 +120,7 @@
     @media (min-width: @tablet-width) {
         font-size: 14px;
         margin: 10px 16px;
-
+        background-color: @white;
     }
 }
 
@@ -144,25 +154,40 @@
     margin: 0;
     padding-top: 80px;
     padding-left: 50px;
+    background-color: @basic-grey-2;
 
 }
 
 .example__before {
+
     width: 185px;
 
     @media (min-width: @tablet-width) {
+        position: absolute;
         width: 400px;
+        top: -170px;
     }
 }
 
 .example__after {
     position: absolute;
-    width: 340px;
-    left: 410px;
+    width: 140px;
+    left: 210px;
+
+    @media (min-width: @tablet-width) {
+        position: absolute;
+        width: 340px;
+        left: 410px;
+        top: -170px;
+    }
 }
 
 .example__range {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 55px;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 301px;
+    }
 }
