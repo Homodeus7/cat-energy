@@ -5,7 +5,8 @@
 .product-line__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 10px;
 
     @media (min-width: @tablet-width) {
         padding: 0 30px;
@@ -23,9 +24,12 @@
 .product-line__item {
     height: 100%;
     width: 100%;
-    max-height: 266px;
+    max-height: 280px;
     max-width: 280px;
     background-color: @basic-grey;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
 
     @media (min-width: @tablet-width) {
         min-height: 372px;
@@ -68,7 +72,7 @@
     font-size: 14px;
     line-height: 18px;
     text-align: left;
-    padding: 10px 20px 20px 20px;
+    padding: 0 20px;
 
 
     @media (min-width: @tablet-width) {
@@ -77,8 +81,8 @@
         letter-spacing: -0.4px;
         padding-left: 51px;
         padding-right: 340px;
-        margin: 0;
         padding-bottom: 50px;
+        margin: 0;
     }
 
     @media (min-width: @desktop-width) {
