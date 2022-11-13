@@ -1,49 +1,37 @@
 .location {
     background-color: @white;
 
+}
+
+.location__wrapper {
+
     @media (min-width: @desktop-width) {
         position: relative;
 
     }
 }
 
-.location__wrapper {
-    @media (min-width: @tablet-width) {
-        padding: 0 71px 0 71px;
-    }
-}
-
-.location--catalog {
-    background-color: @basic-grey;
-
-    @media (min-width: @desktop-width) {
-        background-color: @white;
-    }
-
-}
-
 .location__intro {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 114px;
+    max-height: 114px;
+    padding: 0 20px;
 
     @media (min-width: @tablet-width) {
-        height: 201px;
+        max-height: 201px;
+        padding: 0 71px;
 
     }
 
     @media (min-width: @desktop-width) {
         background-color: @white;
-        box-sizing: border-box;
-        max-width: 570px;
-        min-height: 201px;
-        justify-self: start;
         position: absolute;
-        top: auto;
-        bottom: auto;
+        max-width: 570px;
+        max-height: 201px;
+        top: 10px;
+        left: 10px;
         z-index: 1;
-        top: 54px;
     }
 }
 
@@ -56,6 +44,10 @@
         font-size: 20px;
         line-height: 25px;
         padding-right: 160px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0 100px;
     }
 
 }
@@ -71,8 +63,11 @@
         line-height: 26px;
         padding-left: 160px;
         text-align: right;
+    }
 
-
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        padding-right: 100px;
     }
 }
 
@@ -84,9 +79,6 @@
 }
 
 .location__iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     border: none;
