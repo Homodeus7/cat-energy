@@ -118,7 +118,12 @@
 
    @media (min-width: @desktop-width) {
       &::after {
+         background: @black;
+      }
+
+      &--index::after {
          background: @white;
+
       }
    }
 }
@@ -158,6 +163,12 @@
 
    @media (min-width: @desktop-width) {
       font-size: 20px;
+
+   }
+}
+
+.main-nav__item--index a {
+   @media (min-width: @desktop-width) {
       color: @white;
    }
 }
