@@ -1,7 +1,7 @@
 {
-  "name": "{{projectName}}",
+  "name": "cat-energy",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Личный проект «Кэт-энержи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
@@ -16,7 +16,7 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
   },
-  "himepege": "https://Homodeus7.github.io/sedona",
+  "himepege": "https://Homodeus7.github.io/cat-energy",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
