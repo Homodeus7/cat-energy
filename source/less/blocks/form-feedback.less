@@ -1,18 +1,20 @@
-  .form-comment__input {
-      border: none;
-      padding: 18px 21px 24px 21px;
-      font-size: 16px;
-      line-height: 18px;
-      color: @special-dark-grey;
-      text-transform: uppercase;
-  }
+.form-comment {
+    margin-bottom: 30px;
+    border: none;
 
-  .form-feedback__input::placeholder {
-      color: @special-dark-grey;
-  }
+    @media (min-width: @tablet-width) {
+        grid-column: span 2;
+    }
+}
 
-  .form-comment {
-      @media (min-width: @tablet-width) {
-          grid-column: span 2;
-      }
-  }
+.form-comment__input {
+    width: 100%;
+    padding: 14px 21px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.form-comment__input::placeholder {
+    font-size: 16px;
+    text-transform: uppercase;
+}

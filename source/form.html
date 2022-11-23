@@ -59,9 +59,8 @@
                 <section class="form-choose-programs">
                     <h2 class="visually-hidden">Заполните форму</h2>
 
-
                     <form action="https://echo.htmlacademy.ru" method="get" class="form">
-                        <fieldset class="form-choose-programs__item form-group form-group--login">
+                        <fieldset class="form-group form-group--login">
                             <div class="form-group__field">
                                 <label class="field__label" for="cat-name">имя:<sup>*</sup></label>
                                 <input class="field__input" id="cat-name" type="text" name="name" placeholder="барсик">
@@ -77,7 +76,7 @@
                         </fieldset>
 
 
-                        <fieldset class="form-choose-programs__item form-list form-list--intention">
+                        <fieldset class="form-list form-list--intention">
                             <ul class="form-list__list">
                                 <li class="form-list_item radio">
                                     <input class="radio__input radio__input--current" type="radio" checked
@@ -97,8 +96,7 @@
                             </ul>
                         </fieldset>
 
-
-                        <fieldset class="form-choose-programs__item form-group form-group--contacts">
+                        <fieldset class="form-group form-group--contacts">
                             <legend class="form-group__title">Контактные данные (владельца кота)</legend>
                             <div class="form-group__field field ">
                                 <label class="field__label" for="contact-email">E-mail<sup>:</sup>*</label>
@@ -112,13 +110,14 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="form-choose-programs__item form-comment">
-                            <label class="form-group__title">Комментарий</label>
+                        <fieldset class="form-comment">
+                            <legend class="form-group__title form-group__title-choose" for="comment-desc">Комментарий
+                            </legend>
                             <textarea class="form-comment__input" name="text" id="comment-desc" cols="16" rows="5"
                                 placeholder="расскажите обо всех повадках кота"></textarea>
                         </fieldset>
 
-                        <fieldset class="form-choose-programs__item form-list form-list--additive">
+                        <fieldset class="form-list form-list--additive">
                             <legend class="form-group__title">Дополнительно</legend>
                             <ul class="form-list__list">
                                 <li class="form-list__item checkbox">
@@ -140,7 +139,6 @@
                                 </li>
                             </ul>
                         </fieldset>
-
                         <button class="form-choose-programs__button button" type="submit">Отправить заявку</button>
                         <p class="form-choose-programs__comment">
                             * — обязательные поля
