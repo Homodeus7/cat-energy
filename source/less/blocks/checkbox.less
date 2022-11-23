@@ -22,26 +22,14 @@
   left: 20px;
   width: 40px;
   height: 40px;
-  background-color: @special-grey-4;
-  border-radius: 5px;
+  background: url(../img/rectangle.png);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @desktop-width) {
   .checkbox__input+label::before {
     top: 0;
   }
-}
-
-.checkbox__input+label:hover::before {
-  background-color: @special-grey-4;
-}
-
-.checkbox__input:focus+label::before {
-  background-color: @special-grey-4;
-}
-
-.checkbox__input:active+label::before {
-  background-color: @special-grey-4;
 }
 
 .checkbox__input:checked+label::after {
