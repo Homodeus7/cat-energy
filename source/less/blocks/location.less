@@ -1,6 +1,9 @@
 .location {
     background-color: @white;
+}
 
+.lacation--other {
+    background-color: @basic-grey;
 }
 
 .location__wrapper {
@@ -15,11 +18,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 114px;
+    min-height: 114px;
     padding: 0 20px;
 
     @media (min-width: @tablet-width) {
-        max-height: 201px;
+        min-height: 201px;
         padding: 0 71px;
     }
 
@@ -27,7 +30,7 @@
         background-color: @white;
         position: absolute;
         max-width: 570px;
-        max-height: 201px;
+        min-height: 170px;
         padding: 0;
         top: 10px;
         left: 10px;

@@ -17,7 +17,7 @@
                         <source media="(min-width: 1440px)" srcset="/source/img/logo-desktop.svg">
                         <source media="(min-width: 768px)" srcset="/source/img/logo-tablet.svg">
                         <img class="main-nav__logo" src="/source/img/logo-mobile.svg" width="35" height="38"
-                            alt="Логотип Sedona">
+                            alt="Логотип">
                     </picture> -->
                         <a class="main-nav__logo main-nav__logo--mobile" href="index.html">
                             <img src="./img/logo-mobile.svg" width="35" height="38">
@@ -60,45 +60,48 @@
                     <h2 class="visually-hidden">Заполните форму</h2>
 
                     <form action="https://echo.htmlacademy.ru" method="get" class="form">
-                        <fieldset class="form-group form-group--login">
-                            <div class="form-group__field">
-                                <label class="field__label" for="cat-name">имя:<sup>*</sup></label>
-                                <input class="field__input" id="cat-name" type="text" name="name" placeholder="барсик">
-                            </div>
-                            <div class="form-group__field">
-                                <label class="field__label" for="cat-weight">вес (кг):<sup>*</sup></label>
-                                <input class="field__input" id="cat-weight" type="text" name="weight" placeholder="7">
-                            </div>
-                            <div class="form-group__field">
-                                <label class="field__label" for="cat-age">Возраст (лет):</label>
-                                <input class="field__input" id="cat-age" type="text" name="age" placeholder="7">
-                            </div>
-                        </fieldset>
+                        <div class="form-block__wrapper">
+                            <fieldset class="form-group form-group--login">
+                                <div class="form-group__field">
+                                    <label class="field__label" for="cat-name">имя:<sup>*</sup></label>
+                                    <input class="field__input" id="cat-name" type="text" name="name"
+                                        placeholder="барсик">
+                                </div>
+                                <div class="form-group__field">
+                                    <label class="field__label" for="cat-weight">вес (кг):<sup>*</sup></label>
+                                    <input class="field__input" id="cat-weight" type="text" name="weight"
+                                        placeholder="7">
+                                </div>
+                                <div class="form-group__field">
+                                    <label class="field__label" for="cat-age">Возраст (лет):</label>
+                                    <input class="field__input" id="cat-age" type="text" name="age" placeholder="7">
+                                </div>
+                            </fieldset>
 
-
-                        <fieldset class="form-list form-list--intention">
-                            <ul class="form-list__list">
-                                <li class="form-list_item radio">
-                                    <input class="radio__input radio__input--current" type="radio" checked
-                                        name="intention" value="weight-loss" id="choose-weight-loss">
-                                    <label for="choose-weight-loss">похудение</label>
-                                </li>
-                                <li class="form-list_item radio">
-                                    <input class="radio__input" type="radio" name="intention" value="mass-set"
-                                        id="choose-mass-set">
-                                    <label for="choose-mass-set">набор массы</label>
-                                </li>
-                                <li class="form-list_item radio">
-                                    <input class="radio__input" type="radio" name="intention" value="indefinite"
-                                        id="choose-indefinite">
-                                    <label for="choose-indefinite">не знаю (нужен ваш совет)</label>
-                                </li>
-                            </ul>
-                        </fieldset>
+                            <fieldset class="form-list form-list--intention">
+                                <ul class="form-list__list">
+                                    <li class="form-list_item radio">
+                                        <input class="radio__input radio__input--current" type="radio" checked
+                                            name="intention" value="weight-loss" id="choose-weight-loss">
+                                        <label for="choose-weight-loss">похудение</label>
+                                    </li>
+                                    <li class="form-list_item radio">
+                                        <input class="radio__input" type="radio" name="intention" value="mass-set"
+                                            id="choose-mass-set">
+                                        <label for="choose-mass-set">набор массы</label>
+                                    </li>
+                                    <li class="form-list_item radio">
+                                        <input class="radio__input" type="radio" name="intention" value="indefinite"
+                                            id="choose-indefinite">
+                                        <label for="choose-indefinite">не знаю (нужен ваш совет)</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
 
                         <fieldset class="form-group form-group--contacts">
                             <legend class="form-group__title">Контактные данные (владельца кота)</legend>
-                            <div class="form-group__field field ">
+                            <div class="form-group__field field form-group__field-desktop">
                                 <label class="field__label" for="contact-email">E-mail<sup>:</sup>*</label>
                                 <input class="field__input field__input--email" id="contact-email" type="email"
                                     name="email" placeholder="кuklachev@gmail.com">
@@ -139,14 +142,16 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <button class="form-choose-programs__button button" type="submit">Отправить заявку</button>
-                        <p class="form-choose-programs__comment">
-                            * — обязательные поля
-                        </p>
+                        <section class="form-button">
+                            <button class="form-choose-programs__button button" type="submit">Отправить заявку</button>
+                            <p class="form-choose-programs__comment">
+                                * — обязательные поля
+                            </p>
+                        </section>
                     </form>
                 </section>
             </div>
-            <section class="location">
+            <section class="location lacation--other">
                 <div class="location__wrapper">
                     <h2 class="visually-hidden">Расположение Кэт Энерджи</h2>
                     <div class="location__intro">

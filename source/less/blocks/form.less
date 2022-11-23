@@ -10,13 +10,31 @@
     }
 }
 
-.form {
+.form-block__wrapper {
     @media (min-width: @desktop-width) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
     }
+
+}
+
+.form-button {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+}
+
+.form-button p {
+    margin: 0;
 }
 
 .form-choose-programs__comment {
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+        padding-left: 25px;
+    }
 }

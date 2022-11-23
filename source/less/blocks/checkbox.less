@@ -4,7 +4,10 @@
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 78px;
+
+  @media (min-width: @tablet-width) {}
 }
+
 
 .checkbox__input {
   z-index: 1;
@@ -24,6 +27,10 @@
   height: 40px;
   background: url(../img/rectangle.png);
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -41,6 +48,10 @@
   height: 30px;
   background-image: url("../img/check.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: 13px;
+  }
 }
 
 .checkbox__input:checked+label:active::after {

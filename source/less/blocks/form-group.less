@@ -10,12 +10,24 @@
     margin-bottom: 35px;
 }
 
-.form-group--contacts {
+.form-group--login {
     @media (min-width: @tablet-width) {
-        grid-column: span 2;
+        flex-grow: 1;
     }
+}
 
+.form-group--contacts {
     @media (min-width: @desktop-width) {
         display: flex;
+        justify-content: space-between;
     }
+}
+
+.contact-form__field,
+.form-group__field-desktop {
+    flex-grow: 1;
+}
+
+.form-group__field-desktop {
+    margin-right: 20px;
 }
