@@ -1,13 +1,61 @@
 .catalog-card {
-    background-color: @white;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 50px 100px 40px;
+    padding: 25px 20px;
+    border-bottom: 1px solid @special-grey-4;
 }
+
 .catalog-card__name {
+    margin: 0;
     font-size: 16px;
+    font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+    padding-right: 50px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.catalog-card__image {
+    align-self: center;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.catalog-card__desc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .catalog-card__property {
     display: flex;
+    justify-content: space-between;
     color: @special-dark-grey;
+}
+
+.catalog-card__button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.catalog-card--unfolding {
+    padding: 25px 20px;
+    border-bottom: 1px solid @special-grey-4;
+    text-align: center;
+}
+
+.catalog-card__name--unfolding {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
 }
