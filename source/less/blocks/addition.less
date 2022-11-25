@@ -3,10 +3,20 @@
     line-height: 24px;
     margin: 0;
     padding: 30px 20px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        padding: 50px 30px;
+
+    }
 }
 
 .addition__wrapper {
     padding: 0 20px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 30px;
+    }
 
     @media (min-width: @desktop-width) {
         display: flex;
@@ -28,11 +38,13 @@
     }
 
     @media (min-width: @tablet-width) {
-        width: 708px;
+        width: 100%;
+        padding: 28px 38px;
+        border: 1px solid @special-grey-4;
+        border-bottom: none;
     }
 
     @media (min-width: @desktop-width) {
-        width: 895px;
         display: flex;
     }
 }
@@ -41,6 +53,10 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+        font-size: 18px;
+    }
 }
 
 .addition__feature {
@@ -52,11 +68,24 @@
     justify-content: space-between;
     padding-bottom: 15px;
 
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+
+        justify-content: flex-end;
+
+        & span {
+            padding-left: 20px;
+        }
+
+    }
 }
 
 .addition__banner {
-    padding: 30px 0;
+    padding: 20px 0;
     position: relative;
+    @media (min-width: @tablet-width) {
+        padding: 70px 0;
+    }
 }
 
 .addition__banner-mobile {
@@ -101,4 +130,11 @@
     padding: 0 50px;
     text-align: center;
     top: 220px;
+
+    @media (min-width: @tablet-width) {
+        left: 380px;
+        top: 115px;
+        width: 300px;
+
+    }
 }

@@ -51,11 +51,19 @@
 .catalog-card__button {
   height: 40px;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
 
 .catalog-card--addition {
   @media (min-width: @tablet-width) {
-    width: 632px;
+    width: 100%;
   }
 
   @media (min-width: @desktop-width) {
