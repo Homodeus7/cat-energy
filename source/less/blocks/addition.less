@@ -20,6 +20,9 @@
 
     @media (min-width: @desktop-width) {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
     }
 }
 
@@ -27,6 +30,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (min-width: @desktop-width) {
+        width: 100%;
+        margin-right: 30px;
+    }
+
 }
 
 .addition__item {
@@ -46,45 +55,70 @@
 
     @media (min-width: @desktop-width) {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+        border-top: 1px solid @special-grey-4;
+        padding: 13px 0;
+
     }
 }
 
 .addition__name {
     font-size: 16px;
     line-height: 16px;
+    font-weight: 400;
     text-transform: uppercase;
 
     @media (min-width: @tablet-width) {
         font-size: 18px;
     }
+
+    @media (min-width: @desktop-width) {
+        width: 300px;
+        margin: 0;
+    }
 }
 
 .addition__feature {
+    display: flex;
+    justify-content: space-between;
     font-family: Arial;
     font-size: 14px;
     line-height: 14px;
-    display: flex;
     color: @special-dark-grey;
-    justify-content: space-between;
     padding-bottom: 15px;
 
     @media (min-width: @tablet-width) {
         font-size: 16px;
-
         justify-content: flex-end;
 
         & span {
             padding-left: 20px;
         }
+    }
 
+    @media (min-width: @desktop-width) {
+        width: 300px;
+        padding-bottom: 0;
+        justify-content: space-between;
+
+        & span {
+            padding-left: 0;
+        }
     }
 }
 
 .addition__banner {
     padding: 20px 0;
     position: relative;
+
     @media (min-width: @tablet-width) {
         padding: 70px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
     }
 }
 
@@ -95,6 +129,7 @@
 
     @media (min-width: @desktop-width) {
         display: block;
+        height: 266px;
     }
 }
 
@@ -119,6 +154,16 @@
     background-image: url("../img/icon/icon_gift.svg");
     top: 100px;
     left: 111px;
+
+    @media (min-width: @tablet-width) {
+        top: 125px;
+        left: 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+        top: 45px;
+        left: 75px;
+    }
 }
 
 .adittion__banner-desc {
@@ -133,8 +178,12 @@
 
     @media (min-width: @tablet-width) {
         left: 380px;
-        top: 115px;
-        width: 300px;
+        top: 130px;
+        width: 250px;
+    }
 
+    @media (min-width: @desktop-width) {
+        top: 160px;
+        left: -10px;
     }
 }
